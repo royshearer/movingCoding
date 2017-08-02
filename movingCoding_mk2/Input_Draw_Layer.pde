@@ -2,9 +2,9 @@ void drawStatus2() {
   translate(0, 600);
   textAlign(LEFT);
   fill(255);
-  int lH=20;
+  int lH=12;
   textSize(lH);
-  int yDraw=100;
+  int yDraw=0;
   text("people on camera (userCount): "+userCount, 100, yDraw);
   yDraw=yDraw+int(1.5*lH);
   text("people in play window (playerCount): "+playerCount, 100, yDraw);
