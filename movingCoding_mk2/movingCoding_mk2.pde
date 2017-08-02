@@ -51,6 +51,8 @@ int z=255;  // 255 stops sounder from initially sounding
 int userCount=0;
 int playerCount=0;
 int targetUser=0;
+int w=0;  // width of the output canvas
+int h=0;  // height of the output canvas
 
 int kickThreshold=220;
 int zMaxCP5 = zMax; 
@@ -87,13 +89,13 @@ void draw()
   }
   if (output) {
     translate(790, 0); // move origin to right of kinect view canvas
-    int w=displayWidth-790; // output canvas width
-    int h=displayHeight; // output canvas height
+    w=displayWidth-790; // output canvas width
+    h=displayHeight; // output canvas height
 
 // CHOOSE EITHER sounder or painter lines below:
 
-    painter(w, h);  // execute output routine
-//    sounder(w, h);  // execute output routine
+    painter();  // execute output routine
+//    sounder();  // execute output routine
     
     translate(-790, 0);  // move origin back
   }

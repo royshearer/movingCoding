@@ -1,6 +1,6 @@
 // draws a dot positioned relative to the target user's x and z positions
 
-void painter(int w, int h) {
+void painter() {
   fill(255, 10);
   stroke(255);
   rect(0, 0, w, h);  //draw output canvas

@@ -1,7 +1,7 @@
 // makes a tone with pitch and volume relative to the target user's x and z positions
 // no. of people on camera determines the waveform (sine, saw, square etc.)
 
-void sounder(int w, int h)
+void sounder()
 {
   fill(255);
   stroke(255);

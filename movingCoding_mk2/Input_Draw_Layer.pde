@@ -52,15 +52,15 @@ void drawPlayerLabel(float x, float y, int targetUser) {
   vertex(x + 5, y);
   endShape();
   fill(255);
-  float w=textWidth("PP");
+  float w2=textWidth("PP");
   int xOffLine=60;
   int xOffText=10;
   int yOffLine=60;
   int yOffText=10;
-  if ((x+70+w)>740) {
+  if ((x+70+w2)>740) {
     xOffLine=xOffLine*-1;
     xOffText=xOffText*-1;
-    w=w*-1;
+    w2=w2*-1;
     textAlign(RIGHT);
   }
   if (y<200) {
@@ -73,7 +73,7 @@ void drawPlayerLabel(float x, float y, int targetUser) {
   vertex(x, y);  
   vertex(x+xOffLine, y-yOffLine);
   vertex(x+xOffLine, y-yOffLine);
-  vertex(xLimit+w, y-yOffLine);
+  vertex(xLimit+w2, y-yOffLine);
   //  vertex(xLimit, y-60);
   //  vertex(xLimit, yLimit);
   endShape();
